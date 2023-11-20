@@ -55,23 +55,6 @@ const palavrasEDicas = {
     exibirPalavraEDica();
   };
 
-let tentativasRestantes = 3; // Definir um número inicial de tentativas
-function checkGuess() {
-  let guess = document.getElementById('guessInput').value.toLowerCase(); // Pegar a suposição do jogador e converter para minúsculas
-
-  tentativasRestantes--;
-
-  if (tentativasRestantes > 0) {
-    // Se ainda houver tentativas restantes
-    document.getElementById('message').textContent = `Tentativa incorreta. Tentativas restantes: ${tentativasRestantes}`;
-    // Aqui você pode oferecer uma dica ao jogador ou realizar outras ações
-  } else {
-    // Se o jogador usou todas as tentativas
-    document.getElementById('message').textContent = `Acabaram suas tentativas.`;
-    // Aqui você pode encerrar o jogo ou reiniciar, etc.
-  }
-}
-
 
 
   
