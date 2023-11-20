@@ -10,6 +10,12 @@ const palavrasEDicas = {
     'Bombeiro': 'Profissional encontrado morto na escola após o incêndio.',
     'Nostradamus': 'Nome da escola onde ocorreu o incêndio e a investigação.',
     'Membrana': 'Barreira que separa o Normal do Paranormal no universo da história.',
+    'Zumbi de Sangue': 'Criatura que o trio enfrenta na escola.',
+    'Lina Kunsti': 'Namorada de Gabriel Opspor desaparecida.',
+    'Alexsander Kothe': 'Suspeito ligado aos desaparecimentos na escola.',
+    'Corsa': 'Carro de Liz utilizado durante a investigação dos eventos paranormais.',
+    'Cooler': 'Meio de transporte utilizado por Thiago para retornar após os eventos na escola.',
+    'Biblioteca': 'Local na escola onde foram descobertas informações cruciais para a investigação.',
 
    
     // Adicione mais palavras e dicas conforme necessário
