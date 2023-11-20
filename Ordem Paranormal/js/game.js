@@ -70,7 +70,7 @@ function checkGuess() {
     document.getElementById('message').textContent = `Acabaram suas tentativas.`;
     // Aqui você pode encerrar o jogo ou reiniciar, etc.
   }
-};
+}
 
 
 
