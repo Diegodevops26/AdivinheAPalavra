@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Adivinhe a palavra - A Ordem Paranormal</title>
+  <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="header">
+        <img src="image/op-logo.png" alt="Logo da Ordem Paranormal">
+  <h1>Adivinhe a Palavra - A Ordem Paranormal</h1>
+  <div id="game">
+    <p id="clue">Dica: </p>
+    <p id="word"></p>
+    <input type="text" id="guessInput" placeholder="Digite sua resposta">
+    <button onclick="checkGuess()">Verificar</button>
+    <p id="message"></p>
+    <button onclick="newGame()">Novo Jogo</button>
+  </div>
+    <!-- Início do rodapé -->
+  <footer>
+    <p>&copy; 2023 Diego Santos. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script src="js/game.js"></script>
+</body>
+</html>
