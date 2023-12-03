@@ -1,76 +1,75 @@
 body {
-    font-family: 'Arial', sans-serif;
-    text-align: center;
-    background-color: black; /* Definindo o fundo como preto */
-    color: white; /* Definindo a cor do texto como branco para melhor contraste */
-    margin: 0;
-    padding: 0;
-  }
-  
-  h1 {
-    color: #c22222;
-    margin-top: 30px;
-  }
-  
-  #game {
-    margin-top: 50px;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  #clue {
-    font-style: italic;
-    color: #888;
-  }
-  
-  #word {
-    font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: bold;
-  }
-  
-  #guessInput {
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 16px;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  #message {
-    font-weight: bold;
-    margin-top: 20px;
-    color: #ff6347;
-  }
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
 
-  footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 10px;
-  }
+h1 {
+  color: #c22222;
+  margin-top: 30px;
+}
 
-  
+#game {
+  margin-top: 50px;
+  max-width: 80%; /* Alterado para um tamanho máximo responsivo */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#clue {
+  font-style: italic;
+  color: #888;
+}
+
+#word {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#guessInput {
+  margin-top: 10px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #ff6347;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
   
 
   
