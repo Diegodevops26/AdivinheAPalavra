@@ -1,26 +1,27 @@
 body {
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  background-color: black;
-  color: white;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
 h1 {
   color: #c22222;
-  margin-top: 30px;
 }
 
 #game {
-  margin-top: 50px;
-  max-width: 80%; /* Alterado para um tamanho máximo responsivo */
-  margin-left: auto;
-  margin-right: auto;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
 }
 
 #clue {
@@ -28,7 +29,7 @@ h1 {
   color: #888;
 }
 
-#word {
+#wordDisplay {
   font-size: 24px;
   margin-bottom: 20px;
   font-weight: bold;
@@ -65,12 +66,13 @@ button:hover {
 
 footer {
   text-align: center;
-  background-color: black;
+  background-color: #333;
   color: white;
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
-
-  
 
   
   
