@@ -249,3 +249,61 @@ footer {
     0% { transform: scale(0.5); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
 }
+
+
+/* --- LAYOUT DO PERSONAGEM + TERMINAL --- */
+
+/* O Wrapper segura os dois elementos lado a lado */
+.game-area-wrapper {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza na tela */
+    gap: 20px; /* Espaço entre o boneco e o terminal */
+    flex-wrap: wrap; /* Importante: permite quebrar linha se a tela for pequena */
+    margin-top: 20px;
+    position: relative;
+    z-index: 5;
+}
+
+/* Container da imagem para evitar distorções */
+#character-display {
+    flex-shrink: 0; /* Impede que o boneco seja esmagado */
+    text-align: center;
+}
+
+/* Estilo visual da Imagem */
+.character-image {
+    width: 180px; /* Tamanho do personagem */
+    height: auto;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.6)); /* Sombra no chão */
+    
+    /* Animação de flutuar/respirar */
+    animation: floatCharacter 4s ease-in-out infinite;
+}
+
+/* Animação Suave */
+@keyframes floatCharacter {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); } /* Sobe 10px */
+    100% { transform: translateY(0px); }
+}
+
+/* --- AJUSTES PARA CELULAR (Responsividade) --- */
+@media (max-width: 768px) {
+    .game-area-wrapper {
+        flex-direction: column; /* Coloca um em cima do outro */
+        gap: 0; /* Remove espaço extra */
+    }
+
+    .character-image {
+        width: 140px; /* Diminui um pouco o boneco no celular */
+        margin-bottom: -15px; /* Faz o boneco sobrepor levemente o terminal */
+        position: relative;
+        z-index: 10; /* Garante que fique na frente da borda do terminal */
+    }
+    
+    #game-terminal {
+        width: 100%; /* Garante que o terminal ocupe a largura disponível */
+    }
+}
+
