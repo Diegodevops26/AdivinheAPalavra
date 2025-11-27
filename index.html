@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decifre o Enigma - Ordem Paranormal</title>
-    <link rel="stylesheet" href="style/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decifre o Enigma - Ordem Paranormal</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="overlay"></div> <div class="container">
-        <header>
-            <h1 class="glitch" data-text="DECIFRE O CÓDIGO">DECIFRE O CÓDIGO</h1>
-            <div class="sanity-wrapper">
-                <span>SANIDADE:</span>
-                <div class="sanity-bar-container">
-                    <div id="sanityBar" class="sanity-bar" style="width: 100%;"></div>
-                </div>
-            </div>
-        </header>
+    
+    <div class="overlay"></div> <div class="container">
+        <header>
+            <h1 class="glitch" data-text="DECIFRE O CÓDIGO">DECIFRE O CÓDIGO</h1>
+            <div class="sanity-wrapper">
+                <span>SANIDADE:</span>
+                <div class="sanity-bar-container">
+                    <div id="sanityBar" class="sanity-bar" style="width: 100%;"></div>
+                </div>
+            </div>
+        </header>
 
-        <div id="game-terminal">
-            <div class="logo-area">
-                <div class="op-symbol"></div> 
-            </div>
-
-            <div id="clueContainer">
-                <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
-                <div class="clue-box">
-                    <span id="clueText">??????????</span>
-                    <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
-                </div>
-            </div>
-
-            <div id="wordContainer">
-                </div>
-
-            <div class="input-area">
-                <input type="text" id="guessInput" maxlength="1" placeholder="Digitar..." autocomplete="off">
-                <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
-            </div>
-
-            <p id="message" class="status-message"></p>
-
-            <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
-        </div>
+     <div class="game-area-wrapper">
+    <div id="character-display">
+        <img src="image/personagem.png" alt="Investigador" class="character-image">
     </div>
 
-    <footer>
-        <p>&copy; 2024 Diego.Dev // ORDEM PARANORMAL FANGAME</p>
-    </footer>
+    <div id="game-terminal">
+        <div class="logo-area">
+             <div class="op-symbol"></div> 
+        </div>
+        </div>
+</div>
+                <div class="logo-area">
+                    <div class="op-symbol"></div> 
+                </div>
 
-    <script src="js/game.js"></script>
+                <div id="clueContainer">
+                    <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
+                    <div class="clue-box">
+                        <span id="clueText">??????????</span>
+                        <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
+                    </div>
+                </div>
+
+                <div id="wordContainer">
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="guessInput" maxlength="1" placeholder="Digitar..." autocomplete="off">
+                    <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
+                </div>
+
+                <p id="message" class="status-message"></p>
+
+                <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diego.Dev // ORDEM PARANORMAL FANGAME</p>
+    </footer>
+
+    <script src="js/game.js"></script>
 </body>
 </html>
