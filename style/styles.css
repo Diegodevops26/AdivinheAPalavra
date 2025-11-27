@@ -1,501 +1,264 @@
 :root {
-
     --bg-color: #0a0a0a;
-
     --text-color: #e0e0e0;
-
     --blood-red: #c22222;
-
     --bright-red: #ff0000;
-
-    --terminal-green: #33ff33; /* Opcional: ou use Dourado/Roxo dependendo do elemento */
-
+    --terminal-green: #33ff33;
     --gold: #d4af37;
-
     --dark-grey: #1f1f1f;
-
 }
-
-
 
 body {
-
     font-family: 'Courier Prime', monospace;
-
     background-color: var(--bg-color);
-
     color: var(--text-color);
-
     margin: 0;
-
     padding: 0;
-
     height: 100vh;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
-
     overflow-x: hidden;
-
+    /* Reduzi a fonte base levemente */
+    font-size: 14px; 
 }
-
-
 
 /* Efeito de TV Antiga / Scanlines */
-
 .overlay {
-
     position: fixed;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 100%;
-
     background: repeating-linear-gradient(
-
         0deg,
-
         rgba(0, 0, 0, 0.15),
-
         rgba(0, 0, 0, 0.15) 1px,
-
         transparent 1px,
-
         transparent 2px
-
     );
-
     pointer-events: none;
-
     z-index: 10;
-
 }
 
-
-
+/* --- MUDANÇA 1: Container menor --- */
 .container {
-
-    max-width: 700px;
-
+    max-width: 550px; /* Era 700px. Reduzi para ficar mais compacto */
     margin: 0 auto;
-
-    width: 90%;
-
+    width: 95%;
     position: relative;
-
     z-index: 1;
-
 }
 
-
-
-/* Título com Glitch */
-
+/* --- MUDANÇA 2: Título menor --- */
 h1.glitch {
-
     color: var(--blood-red);
-
     text-align: center;
-
-    font-size: 2.5rem;
-
+    font-size: 1.8rem; /* Era 2.5rem */
     text-shadow: 2px 2px var(--bg-color);
-
-    letter-spacing: 3px;
-
-    margin-bottom: 10px;
-
+    letter-spacing: 2px;
+    margin-bottom: 5px;
     position: relative;
-
 }
-
-
 
 /* Barra de Sanidade */
-
 .sanity-wrapper {
-
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
     gap: 10px;
-
-    margin-bottom: 30px;
-
+    margin-bottom: 20px; /* Menos margem */
     font-weight: bold;
-
+    font-size: 0.9rem; /* Texto menor */
 }
-
-
 
 .sanity-bar-container {
-
-    width: 200px;
-
-    height: 15px;
-
+    width: 150px; /* Barra mais curta */
+    height: 12px; /* Barra mais fina */
     background-color: #333;
-
     border: 1px solid #555;
-
     border-radius: 2px;
-
     overflow: hidden;
-
 }
 
-
-
+/* --- CORREÇÃO DA COR DA SANIDADE --- */
 .sanity-bar {
-
     height: 100%;
-
-    background-color: var(--gold); /* Cor de Sanidade */
-
-    box-shadow: 0 0 10px var(--gold);
-
+    /* Fixei a cor hexadecimal direto para garantir que apareça */
+    background-color: #d4af37; 
+    box-shadow: 0 0 8px #d4af37;
     transition: width 0.3s ease, background-color 0.3s;
-
 }
-
-
 
 /* Área Principal "Terminal" */
-
 #game-terminal {
-
     background-color: rgba(20, 20, 20, 0.95);
-
     border: 1px solid #333;
-
-    border-top: 4px solid var(--blood-red);
-
-    padding: 30px;
-
-    box-shadow: 0 0 20px rgba(194, 34, 34, 0.2);
-
+    border-top: 3px solid var(--blood-red);
+    padding: 20px; /* Menos preenchimento interno (era 30px) */
+    box-shadow: 0 0 15px rgba(194, 34, 34, 0.2);
     position: relative;
-
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
-
-
 
 /* Dica */
-
 .terminal-text {
-
     color: #888;
-
-    font-size: 0.9rem;
-
+    font-size: 0.8rem; /* Texto menor */
     margin-bottom: 5px;
-
 }
-
-
 
 .clue-box {
-
     background: #111;
-
-    padding: 10px;
-
+    padding: 8px; /* Menor */
     border-left: 3px solid var(--text-color);
-
     display: flex;
-
     justify-content: space-between;
-
     align-items: center;
-
-    margin-bottom: 30px;
-
+    margin-bottom: 20px;
 }
-
-
 
 #clueText {
-
     font-weight: bold;
-
     letter-spacing: 1px;
-
+    font-size: 0.9rem;
 }
-
-
 
 /* Botões Estilizados */
-
 button {
-
     background: transparent;
-
     border: 1px solid var(--text-color);
-
     color: var(--text-color);
-
-    padding: 8px 16px;
-
+    padding: 6px 12px; /* Botões menores */
     font-family: 'Courier Prime', monospace;
-
     cursor: pointer;
-
     transition: all 0.2s;
-
     text-transform: uppercase;
-
     font-weight: bold;
-
+    font-size: 0.8rem;
 }
-
-
 
 button:hover {
-
     background: var(--text-color);
-
     color: var(--bg-color);
-
     box-shadow: 0 0 10px rgba(255,255,255,0.5);
-
 }
-
-
 
 #hintButton {
-
     border-color: var(--gold);
-
     color: var(--gold);
-
-    font-size: 0.8rem;
-
+    font-size: 0.75rem;
 }
-
-
 
 #hintButton:hover {
-
     background: var(--gold);
-
     color: #000;
-
 }
 
-
-
-/* Visualização da Palavra (Caixinhas) */
-
+/* --- MUDANÇA 3: Letras menores --- */
 #wordContainer {
-
     display: flex;
-
     justify-content: center;
-
-    gap: 10px;
-
-    margin: 40px 0;
-
+    gap: 8px; /* Menos espaço entre letras */
+    margin: 25px 0;
     flex-wrap: wrap;
-
 }
-
-
 
 .letter-slot {
-
-    width: 40px;
-
-    height: 50px;
-
-    border-bottom: 3px solid #555;
-
+    width: 32px;  /* Era 40px */
+    height: 40px; /* Era 50px */
+    border-bottom: 2px solid #555;
     display: flex;
-
     align-items: center;
-
     justify-content: center;
-
-    font-size: 2rem;
-
+    font-size: 1.5rem; /* Fonte menor (era 2rem) */
     font-weight: bold;
-
     text-transform: uppercase;
-
     color: var(--text-color);
-
     transition: border-color 0.3s;
-
 }
-
-
 
 .letter-slot.revealed {
-
     border-color: var(--text-color);
-
     animation: popIn 0.3s forwards;
-
 }
-
-
 
 /* Input e Controles */
-
 .input-area {
-
     display: flex;
-
-    gap: 10px;
-
+    gap: 8px;
     justify-content: center;
-
 }
-
-
 
 #guessInput {
-
     background: #111;
-
     border: 1px solid #444;
-
     color: white;
-
-    padding: 10px;
-
+    padding: 8px;
     font-family: 'Courier Prime', monospace;
-
-    font-size: 1.2rem;
-
-    width: 150px;
-
+    font-size: 1rem;
+    width: 130px; /* Input menor */
     text-align: center;
-
     text-transform: uppercase;
-
 }
-
-
 
 #guessInput:focus {
-
     outline: none;
-
     border-color: var(--blood-red);
-
     box-shadow: 0 0 10px rgba(194, 34, 34, 0.5);
-
 }
-
-
 
 #btnGuess {
-
     border-color: var(--blood-red);
-
     color: var(--blood-red);
-
 }
-
-
 
 #btnGuess:hover {
-
     background: var(--blood-red);
-
     color: white;
-
 }
-
-
 
 #btnReset {
-
     width: 100%;
-
-    margin-top: 20px;
-
+    margin-top: 15px;
     border-color: var(--gold);
-
     color: var(--gold);
-
 }
 
-
-
 /* Mensagens */
-
 #message {
-
     text-align: center;
-
     height: 20px;
-
-    margin-top: 20px;
-
+    margin-top: 15px;
     font-weight: bold;
-
+    font-size: 0.9rem;
 }
 
 .msg-error { color: var(--bright-red); animation: shake 0.5s; }
-
 .msg-success { color: var(--terminal-green); }
 
-
-
 /* Footer */
-
 footer {
-
     text-align: center;
-
     color: #444;
-
-    font-size: 0.8rem;
-
+    font-size: 0.7rem;
     margin-top: auto;
-
     padding: 10px;
-
     z-index: 2;
-
 }
-
-
 
 /* Animações */
-
 @keyframes shake {
-
     0% { transform: translateX(0); }
-
     25% { transform: translateX(-5px); }
-
     50% { transform: translateX(5px); }
-
     75% { transform: translateX(-5px); }
-
     100% { transform: translateX(0); }
-
 }
 
-
-
 @keyframes popIn {
-
     0% { transform: scale(0.5); opacity: 0; }
-
     100% { transform: scale(1); opacity: 1; }
-
-} 
+}
