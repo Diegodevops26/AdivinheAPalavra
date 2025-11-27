@@ -248,4 +248,5 @@ footer {
 @keyframes popIn {
     0% { transform: scale(0.5); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
-}     aqui esta o css do projeto
+} 
+
