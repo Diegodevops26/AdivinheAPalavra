@@ -84,10 +84,13 @@ h1.glitch {
 /* --- CORREÇÃO DA COR DA SANIDADE --- */
 .sanity-bar {
     height: 100%;
-    /* Fixei a cor hexadecimal direto para garantir que apareça */
+    
+    /* ADICIONE ISTO: Uma cor padrão (Dourado) para garantir que apareça */
     background-color: #d4af37; 
-    box-shadow: 0 0 8px #d4af37;
-    transition: width 0.3s ease, background-color 0.3s;
+    /* Sombra para brilho */
+    box-shadow: 0 0 10px #d4af37; 
+    
+    transition: width 0.3s ease, background-color 0.3s, box-shadow 0.3s;
 }
 
 /* Área Principal "Terminal" */
@@ -262,3 +265,4 @@ footer {
     0% { transform: scale(0.5); opacity: 0; }
     100% { transform: scale(1); opacity: 1; }
 }
+
