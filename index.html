@@ -20,41 +20,30 @@
             </div>
         </header>
 
-     <div class="game-area-wrapper">
-    <div id="character-display">
-        <img src="image/personagem.png" alt="Investigador" class="character-image">
-    </div>
-
-    <div id="game-terminal">
-        <div class="logo-area">
-             <div class="op-symbol"></div> 
-        </div>
-        </div>
-</div>
-                <div class="logo-area">
-                    <div class="op-symbol"></div> 
-                </div>
-
-                <div id="clueContainer">
-                    <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
-                    <div class="clue-box">
-                        <span id="clueText">??????????</span>
-                        <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
-                    </div>
-                </div>
-
-                <div id="wordContainer">
-                </div>
-
-                <div class="input-area">
-                    <input type="text" id="guessInput" maxlength="1" placeholder="Digitar..." autocomplete="off">
-                    <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
-                </div>
-
-                <p id="message" class="status-message"></p>
-
-                <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
+        <div id="game-terminal">
+            <div class="logo-area">
+                <div class="op-symbol"></div> 
             </div>
+
+            <div id="clueContainer">
+                <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
+                <div class="clue-box">
+                    <span id="clueText">??????????</span>
+                    <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
+                </div>
+            </div>
+
+            <div id="wordContainer">
+                </div>
+
+            <div class="input-area">
+                <input type="text" id="guessInput" maxlength="1" placeholder="Digitar..." autocomplete="off">
+                <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
+            </div>
+
+            <p id="message" class="status-message"></p>
+
+            <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
         </div>
     </div>
 
@@ -64,4 +53,4 @@
 
     <script src="js/game.js"></script>
 </body>
-</html>
+</html>                                                                                                                                                                         
