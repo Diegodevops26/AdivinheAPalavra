@@ -1,19 +1,33 @@
 {
-    "Membrana": "Camada que separa o Normal do Paranormal.",
-    "Normal": "Local onde vivemos como humanos.",
-    "Paranormal": "Lugar onde tudo impossível pode se tornar real.",
-    "Esoterroristas": "Membros dos grupos que buscam enfraquecer a Membrana.",
-    "Monstros": "Criaturas perigosas provenientes do Paranormal.",
-    "Dimensões": "Áreas diferentes como o Normal e o Paranormal.",
-    "Gonzales Medina": "Detetive inicialmente envolvido na investigação do incêndio.",
-    "Degolificada": "Criatura misteriosa e letal encontrada na biblioteca.",
-    "Bombeiro": "Profissional encontrado morto na escola após o incêndio.",
-    "Nostradamus": "Nome da escola onde ocorreu o incêndio e a investigação.",
-    "Membrana": "Barreira que separa o Normal do Paranormal no universo da história.",
-    "Zumbi de Sangue": "Criatura que o trio enfrenta na escola.",
-    "Lina Kunsti": "Namorada de Gabriel Opspor desaparecida.",
-    "Alexsander Kothe": "Suspeito ligado aos desaparecimentos na escola.",
-    "Corsa": "Carro de Liz utilizado durante a investigação dos eventos paranormais.",
-    "Cooler": "Meio de transporte utilizado por Thiago para retornar após os eventos na escola.",
-    "Biblioteca": "Local na escola onde foram descobertas informações cruciais para a investigação."
+  "Membrana": "Estrutura invisível e instável que separa a Realidade da Zona Anômala. Não é uma barreira física, mas um limite dimensional sustentado por padrões matemáticos ainda não completamente compreendidos. Pequenas oscilações foram detectadas antes do Incidente Nostar, sugerindo que a Membrana pode estar enfraquecendo. Relatórios indicam microfissuras registradas em áreas de alta atividade eletromagnética.",
+
+  "Realidade": "Dimensão base onde a humanidade opera sob leis físicas estáveis. Governada por causalidade linear e constantes universais previsíveis. Após o incidente, foram registrados eventos de inconsistência temporal, falhas de registro digital e testemunhos de distorções perceptivas, sugerindo interferência externa na estrutura da Realidade.",
+
+  "Zona Anomala": "Espaço dimensional adjacente à Realidade, onde as leis físicas não seguem padrões fixos. Dados coletados indicam que matéria e informação se comportam de maneira não linear dentro dessa região. Fragmentos da Zona Anômala parecem atravessar a Membrana durante picos de instabilidade energética.",
+
+  "Dissidentes": "Grupo clandestino formado por ex-pesquisadores e operadores que acreditam que a Membrana limita o potencial humano. Defendem a exposição controlada à Zona Anômala como forma de evolução. Suspeita-se que sabotagens internas tenham sido executadas para acelerar o enfraquecimento da barreira dimensional.",
+
+  "Entidades": "Manifestações instáveis oriundas da Zona Anômala. Não seguem padrões biológicos conhecidos e parecem reagir à observação consciente. Algumas demonstram comportamento predatório, enquanto outras apenas distorcem ambientes e sistemas eletrônicos ao redor.",
+
+  "Setores": "Divisões classificadas criadas pelo Protocolo Sigma para mapear áreas afetadas por anomalias. Cada setor recebe uma designação numérica baseada no nível de instabilidade detectado. Setores acima do nível 4 são considerados irrecuperáveis.",
+
+  "Inspetor Medina": "Investigador designado para analisar o Incidente Nostar antes da ativação do Protocolo Sigma. Seus relatórios finais apresentam inconsistências e trechos corrompidos. Medina desapareceu 48 horas após registrar atividade anômala no Setor 3.",
+
+  "Entidade Degolada": "Manifestação registrada pela primeira vez no subsolo do Instituto Nostar. Caracteriza-se por ausência parcial de forma estável e emissão de ruídos de baixa frequência detectáveis apenas por equipamentos específicos. Arquivos visuais relacionados apresentam corrupção severa.",
+
+  "Agente 04": "Operador tático enviado para contenção inicial do Setor Nostar. Encontrado sem sinais vitais, sem indícios de trauma físico aparente. Equipamentos registraram variação extrema de campo eletromagnético momentos antes da perda de sinal.",
+
+  "Instituto Nostar": "Complexo educacional onde ocorreu o primeiro colapso parcial da Membrana. O prédio foi evacuado após relatos de distorção espacial, falhas elétricas e desaparecimentos inexplicáveis. O local permanece isolado sob jurisdição do Protocolo Sigma.",
+
+  "Aberração Hemática": "Forma hostil detectada no subsolo do Instituto Nostar. Apresenta comportamento agressivo e aparente capacidade de manipular matéria orgânica próxima. Amostras coletadas se degradaram ao sair do Setor afetado.",
+
+  "Lina Karsen": "Estudante vinculada ao Instituto Nostar, desaparecida horas antes da ativação do protocolo de isolamento. Última comunicação enviada contém padrões numéricos semelhantes aos detectados na Zona Anômala.",
+
+  "A. Kothe": "Indivíduo monitorado por envolvimento indireto com os Dissidentes. Movimentações financeiras e registros de acesso indicam presença não autorizada nas dependências do Instituto dias antes do incidente.",
+
+  "Veículo C-01": "Unidade de evacuação utilizada durante a contenção inicial do Setor Nostar. Sistemas eletrônicos apresentaram interferência ao se aproximar da área crítica. Logs internos foram parcialmente sobrescritos por dados desconhecidos.",
+
+  "Unidade Portátil": "Dispositivo experimental desenvolvido para estabilizar microfissuras na Membrana. Utilizado em tentativas emergenciais de contenção. Relatórios indicam que seu uso excessivo pode ampliar instabilidades em vez de reduzi-las.",
+
+  "Arquivo Central": "Banco de dados classificado onde todos os registros do Protocolo Sigma são armazenados. Diversos documentos apresentam corrupção espontânea, mesmo após isolamento físico dos servidores. Há indícios de que algo dentro da Zona Anômala possa interagir com sistemas digitais."
 }
