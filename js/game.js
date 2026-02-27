@@ -232,4 +232,4 @@ guessInputEl.addEventListener("keypress", function(event) {
 });
 
 // Iniciar jogo ao carregar a página
-window.onload = newGame;
+window.onload = newGame;                                                                                                                        
