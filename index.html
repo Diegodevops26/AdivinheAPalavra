@@ -1,137 +1,59 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <!-- ================= META ================= -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#050505">
-    <meta name="description" content="Jogo investigativo inspirado em horror psicológico e enigmas criptografados.">
-    
-    <title>PROTOCOLO SIGMA — Decifre o Código</title>
-
-    <!-- ================= FONTES ================= -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- ================= CSS ================= -->
+    <title>Decifre o Enigma - Ordem Paranormal</title>
     <link rel="stylesheet" href="style/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
-<body class="state-normal">
-
-    <!-- Overlay Visual -->
-    <div class="overlay" aria-hidden="true"></div>
-
-    <!-- ================= CONTEÚDO PRINCIPAL ================= -->
-    <main class="container">
-
-        <!-- ===== HEADER ===== -->
-        <header class="game-header">
-            <h1 class="glitch" data-text="DECIFRE O CÓDIGO">
-                DECIFRE O CÓDIGO
-            </h1>
-
-            <div class="sanity-wrapper" aria-label="Nível de Sanidade">
-                <span class="sanity-label">SANIDADE</span>
+<body>
+    
+    <div class="overlay"></div> 
+    <div class="container">
+        <header>
+            <h1 class="glitch" data-text="DECIFRE O CÓDIGO">DECIFRE O CÓDIGO</h1>
+            <div class="sanity-wrapper">
+                <span>SANIDADE:</span>
                 <div class="sanity-bar-container">
-                    <div id="sanityBar"
-                         class="sanity-bar"
-                         role="progressbar"
-                         aria-valuemin="0"
-                         aria-valuemax="100"
-                         aria-valuenow="100"
-                         style="width: 100%;">
-                    </div>
+                    <div id="sanityBar" class="sanity-bar" style="width: 100%;"></div>
                 </div>
             </div>
         </header>
 
-        <!-- ===== TERMINAL ===== -->
-        <section id="game-terminal" class="terminal" aria-live="polite">
-
-            <!-- Identificação de Caso -->
-            <div class="case-header">
-                <p class="terminal-text">
-                    > CASO ATUAL: <span id="caseName">ARQ-01</span>
-                </p>
-            </div>
-
-            <!-- Logo / Símbolo -->
+        <div id="game-terminal">
             <div class="logo-area">
-                <div class="op-symbol" aria-hidden="true"></div>
+                <div class="op-symbol"></div> 
             </div>
 
-            <!-- ===== DICA ===== -->
-            <section id="clueContainer" class="clue-section">
-                <p class="terminal-text">
-                    > ARQUIVO ENCONTRADO. DICA DISPONÍVEL:
-                </p>
-
+            <div id="clueContainer">
+                <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
                 <div class="clue-box">
                     <span id="clueText">??????????</span>
-                    <button id="hintButton" type="button">
-                        [ INVESTIGAR ]
-                    </button>
+                    <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
                 </div>
-            </section>
-
-            <!-- ===== PALAVRA ===== -->
-            <section id="wordContainer"
-                     class="word-section"
-                     aria-label="Palavra criptografada">
-            </section>
-
-            <!-- ===== INPUT ===== -->
-            <section class="input-area">
-                <label for="guessInput" class="sr-only">
-                    Digite sua resposta
-                </label>
-
-                <input
-                    type="text"
-                    id="guessInput"
-                    maxlength="30"
-                    placeholder="DIGITAR..."
-                    autocomplete="off"
-                    spellcheck="false"
-                >
-
-                <button id="btnGuess" type="button">
-                    PROCESSAR
-                </button>
-            </section>
-
-            <!-- ===== STATUS ===== -->
-            <div class="status-area">
-                <p id="message"
-                   class="status-message"
-                   aria-live="assertive">
-                </p>
             </div>
 
-            <!-- ===== RESET ===== -->
-            <div class="reset-area">
-                <button id="btnReset"
-                        type="button"
-                        hidden>
-                    REINICIAR MISSÃO
-                </button>
+            <div id="wordContainer">
             </div>
 
-        </section>
-    </main>
+            <div class="input-area">
+                <input type="text" id="guessInput" maxlength="30" placeholder="Digitar..." autocomplete="off">
+                <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
+            </div>
 
-    <!-- ===== FOOTER ===== -->
-    <footer class="game-footer">
-        <p>
-            &copy; 2026 Diego.Dev // PROTOCOLO SIGMA — Fangame
-        </p>
+            <p id="message" class="status-message"></p>
+
+            <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Diego.Dev // ORDEM PARANORMAL FANGAME</p>
     </footer>
 
-    <!-- ================= JS ================= -->
-    <script src="js/game.js" defer></script>
-
+    <script src="js/game.js"></script>
 </body>
 </html>
+
 
