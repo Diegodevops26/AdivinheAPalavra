@@ -29,8 +29,8 @@
             <div id="clueContainer">
                 <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
                 <div class="clue-box">
-                    <span id="clueText">??????????</span>
-                    <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
+                    <span id="clueText">CARREGANDO DADOS...</span>
+                    <button id="hintButton">[ INVESTIGAR ]</button>
                 </div>
             </div>
 
@@ -39,12 +39,12 @@
 
             <div class="input-area">
                 <input type="text" id="guessInput" maxlength="30" placeholder="Digitar..." autocomplete="off">
-                <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
+                <button id="btnGuess">PROCESSAR</button>
             </div>
 
             <p id="message" class="status-message"></p>
 
-            <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
+            <button id="btnReset" style="display:none;">REINICIAR MISSÃO</button>
         </div>
     </div>
 
@@ -55,5 +55,3 @@
     <script src="js/game.js"></script>
 </body>
 </html>
-
-
