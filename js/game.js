@@ -67,6 +67,8 @@ async function loadWordList() {
 }
 
 function addLog(message, type = 'neutral') {
+    if (!logListEl) return;
+
     const item = document.createElement('li');
     item.className = `log-${type}`;
     item.textContent = message;
@@ -84,6 +86,8 @@ function setUiEnabled(enabled) {
 }
 
 function updateHud() {
+    if (!hudRoundEl || !hudWinsEl || !hudLossesEl || !hudThreatEl) return;
+
     hudRoundEl.textContent = String(roundNumber).padStart(2, '0');
     hudWinsEl.textContent = String(totalWins).padStart(2, '0');
     hudLossesEl.textContent = String(totalLosses).padStart(2, '0');
