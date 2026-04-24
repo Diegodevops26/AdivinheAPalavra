@@ -8,11 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div class="overlay"></div> 
+    <div class="overlay"></div>
+    <div class="vignette"></div>
+
     <div class="container">
         <header>
             <h1 class="glitch" data-text="DECIFRE O CÓDIGO">DECIFRE O CÓDIGO</h1>
+            <p class="subtitle">PROTOCOLO SIGMA // OPERAÇÃO NOSTAR</p>
+            <div class="hud-grid">
+                <div class="hud-card">
+                    <span class="hud-label">RODADA</span>
+                    <strong id="hudRound">01</strong>
+                </div>
+                <div class="hud-card">
+                    <span class="hud-label">SUCESSOS</span>
+                    <strong id="hudWins">00</strong>
+                </div>
+                <div class="hud-card">
+                    <span class="hud-label">FALHAS</span>
+                    <strong id="hudLosses">00</strong>
+                </div>
+                <div class="hud-card">
+                    <span class="hud-label">AMEAÇA</span>
+                    <strong id="hudThreat">BAIXA</strong>
+                </div>
+            </div>
             <div class="sanity-wrapper">
                 <span>SANIDADE:</span>
                 <div class="sanity-bar-container">
@@ -22,29 +42,29 @@
         </header>
 
         <div id="game-terminal">
-            <div class="logo-area">
-                <div class="op-symbol"></div> 
-            </div>
-
             <div id="clueContainer">
                 <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
                 <div class="clue-box">
-                    <span id="clueText">??????????</span>
-                    <button id="hintButton" onclick="revealHint()">[ INVESTIGAR ]</button>
+                    <span id="clueText">CARREGANDO DADOS...</span>
+                    <button id="hintButton">[ INVESTIGAR ]</button>
                 </div>
             </div>
 
-            <div id="wordContainer">
-            </div>
+            <div id="wordContainer"></div>
 
             <div class="input-area">
                 <input type="text" id="guessInput" maxlength="30" placeholder="Digitar..." autocomplete="off">
-                <button id="btnGuess" onclick="checkGuess()">PROCESSAR</button>
+                <button id="btnGuess">PROCESSAR</button>
             </div>
 
             <p id="message" class="status-message"></p>
 
-            <button id="btnReset" onclick="newGame()" style="display:none;">REINICIAR MISSÃO</button>
+            <button id="btnReset" style="display:none;">REINICIAR MISSÃO</button>
+
+            <section class="log-panel">
+                <p class="terminal-text">> LOG DA OPERAÇÃO</p>
+                <ul id="logList"></ul>
+            </section>
         </div>
     </div>
 
@@ -55,5 +75,3 @@
     <script src="js/game.js"></script>
 </body>
 </html>
-
-
