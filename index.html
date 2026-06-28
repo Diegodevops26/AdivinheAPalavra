@@ -13,10 +13,18 @@
     <div class="container">
         <header>
             <h1 class="glitch" data-text="DECIFRE O CÓDIGO">DECIFRE O CÓDIGO</h1>
-            <div class="sanity-wrapper">
-                <span>SANIDADE:</span>
-                <div class="sanity-bar-container">
-                    <div id="sanityBar" class="sanity-bar" style="width: 100%;"></div>
+            
+            <div class="game-status-bar">
+                <div class="sanity-wrapper">
+                    <span>SANIDADE:</span>
+                    <div class="sanity-bar-container">
+                        <div id="sanityBar" class="sanity-bar" style="width: 100%;"></div>
+                    </div>
+                </div>
+                
+                <div class="hud-info">
+                    <div class="timer-box">TEMPO: <span id="timer">00:00</span></div>
+                    <div class="round-box">RODADA: <span id="currentRound">1/5</span></div>
                 </div>
             </div>
         </header>
@@ -26,19 +34,33 @@
                 <div class="op-symbol"></div> 
             </div>
 
+            <div class="category-wrapper">
+                <p class="terminal-text">> ARQUIVO INDEXADO EM: <span id="categoryText">CARREGANDO...</span></p>
+            </div>
+
             <div id="clueContainer">
-                <p class="terminal-text">> ARQUIVO ENCONTRADO. DICA DISPONÍVEL:</p>
+                <p class="terminal-text">> DICA DISPONÍVEL:</p>
                 <div class="clue-box">
                     <span id="clueText">CARREGANDO DADOS...</span>
                     <button id="hintButton">[ INVESTIGAR ]</button>
                 </div>
             </div>
 
-            <div id="wordContainer">
+            <div id="wordContainer"></div>
+
+            <div class="wrong-letters-wrapper">
+                <p class="terminal-text">> ELEMENTOS REJEITADOS:</p>
+                <div id="wrongLettersContainer" class="wrong-letters-box">
+                    </div>
+            </div>
+
+            <div class="keyboard-wrapper">
+                <div id="virtualKeyboard" class="virtual-keyboard">
+                    </div>
             </div>
 
             <div class="input-area">
-                <input type="text" id="guessInput" maxlength="30" placeholder="Digitar..." autocomplete="off">
+                <input type="text" id="guessInput" maxlength="30" placeholder="Chutar palavra inteira..." autocomplete="off">
                 <button id="btnGuess">PROCESSAR</button>
             </div>
 
@@ -48,8 +70,16 @@
         </div>
     </div>
 
+    <div id="endGameScreen" class="end-game-screen hidden">
+        <div class="end-game-content">
+            <h2 id="endGameTitle" class="end-game-title">MISSAO CUMPRIDA</h2>
+            <p id="endGameMessage">O enigma foi decifrado antes que o Outro Lado te consumisse.</p>
+            <button id="btnRestartGame" class="btn-terminal">[ RECONECTAR AO TERMINAL ]</button>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 Diego.Dev // ORDEM PARANORMAL FANGAME</p>
+        <p>&copy; 2026 Diego.Dev // ORDEM PARANORMAL FANGAME</p>
     </footer>
 
     <script src="js/game.js"></script>
